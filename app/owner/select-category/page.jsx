@@ -1,0 +1,69 @@
+'use client';
+
+import React, { useState, useEffect, Suspense } from 'react';
+import BusinessCategorySelector from '@/components/owner/BusinessCategorySelector';
+
+function CategoryContent() {
+  const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let isMounted = true;
+    async function verifyAuth() {
+      try {
+        const res = await fetch('/api/auth/me');
+        if (!res.ok) {
+          window.location.href = '/owner/login';
+          return;
+        }
+        const data = await res.json();
+        if (!isMounted) return;
+
+        if (!data.authenticated || !data.user || data.user.role !== 'owner') {
+          window.location.href = '/owner/login';
+          return;
+        }
+        setCurrentUser(data.user);
+      } catch (err) {
+        window.location.href = '/owner/login';
+      } finally {
+        if (isMounted) setLoading(false);
+      }
+    }
+    verifyAuth();
+    return () => { isMounted = false; };
+  }, []);
+
+  if (loading || !currentUser) {
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
+        <div className="flex flex-col items-center gap-3 text-slate-700 font-semibold text-sm">
+          <span className="w-6 h-6 border-2 border-[#5E17EB] border-t-transparent rounded-full animate-spin"></span>
+          <span>Verifying Session...</span>
+        </div>
+      </div>
+    );
+  }
+
+  const handleComplete = (data) => {
+    window.location.href = `/owner/onboarding/basic-details?category=${encodeURIComponent(data.businessCategory)}`;
+  };
+
+  return (
+    <main className="min-h-screen bg-slate-50 flex items-center justify-center py-6 px-4">
+      <BusinessCategorySelector
+        ownerEmail={currentUser.email}
+        ownerName={currentUser.name}
+        onComplete={handleComplete}
+      />
+    </main>
+  );
+}
+
+export default function SelectCategoryPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-sm text-slate-500">Loading...</div>}>
+      <CategoryContent />
+    </Suspense>
+  );
+}

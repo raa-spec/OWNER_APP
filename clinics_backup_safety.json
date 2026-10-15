@@ -1,0 +1,904 @@
+[
+  {
+    "_id": "6ac8ceb897d18c88c55fc48d",
+    "id": "clinic-101",
+    "name": "Sunrise Family Care Clinic",
+    "rating": "4.8",
+    "address": "Salt Lake Sector V, Kolkata",
+    "lat": 22.5726,
+    "lng": 88.4331,
+    "doctors": [
+      {
+        "id": "doctor-101",
+        "name": "Dr. Arindam Sen",
+        "specialization": "MBBS, MD",
+        "experience": 11,
+        "duration": 5,
+        "fee": 500,
+        "bookingCharge": 20,
+        "schedule": {
+          "monday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "9:00 AM",
+                "close": "12:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "9:15 AM"
+              },
+              {
+                "open": "5:00 PM",
+                "close": "8:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "5:10 PM"
+              }
+            ]
+          },
+          "tuesday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "9:00 AM",
+                "close": "12:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "9:00 AM"
+              },
+              {
+                "open": "5:00 PM",
+                "close": "8:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "5:05 PM"
+              }
+            ]
+          },
+          "wednesday": {
+            "active": false,
+            "slots": []
+          },
+          "thursday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "10:00 AM",
+                "close": "1:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "10:15 AM"
+              },
+              {
+                "open": "4:00 PM",
+                "close": "9:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "8:28 PM"
+              }
+            ]
+          },
+          "friday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "9:30 AM",
+                "close": "12:30 PM",
+                "capacity": 6,
+                "checkupStartTime": "9:45 AM"
+              },
+              {
+                "open": "1:00 PM",
+                "close": "8:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "3:00 PM"
+              }
+            ]
+          },
+          "saturday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "10:00 AM",
+                "close": "2:00 PM",
+                "capacity": 8,
+                "checkupStartTime": "10:15 AM"
+              }
+            ]
+          },
+          "sunday": {
+            "active": false,
+            "slots": []
+          }
+        },
+        "bookings": [
+          {
+            "token": "A101",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "9:00 AM",
+              "close": "12:00 PM"
+            },
+            "patient": {
+              "name": "Rahul Das",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T08:00:00.000Z"
+          },
+          {
+            "token": "A102",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "9:00 AM",
+              "close": "12:00 PM"
+            },
+            "patient": {
+              "name": "Mita Das",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T08:05:00.000Z"
+          },
+          {
+            "token": "A103",
+            "date": "2026-10-08",
+            "slot": {
+              "open": "4:00 PM",
+              "close": "9:00 PM"
+            },
+            "patient": {
+              "name": "Rohan Das",
+              "type": "child"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T08:10:00.000Z"
+          },
+          {
+            "token": "A104",
+            "date": "2026-10-08",
+            "slot": {
+              "open": "4:00 PM",
+              "close": "9:00 PM"
+            },
+            "patient": {
+              "name": "Ankit Roy",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T09:00:00.000Z"
+          },
+          {
+            "token": "A105",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "5:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Priya Roy",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T09:05:00.000Z"
+          },
+          {
+            "token": "A106",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "9:00 AM",
+              "close": "12:00 PM"
+            },
+            "patient": {
+              "name": "Suman Das",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T08:00:00.000Z"
+          },
+          {
+            "token": "A107",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "9:00 AM",
+              "close": "12:00 PM"
+            },
+            "patient": {
+              "name": "Riya Das",
+              "type": "child"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T08:05:00.000Z"
+          },
+          {
+            "token": "A108",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "5:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Amit Sen",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T09:00:00.000Z"
+          },
+          {
+            "token": "A109",
+            "sequence": 9,
+            "date": "2026-10-09",
+            "slot": {
+              "open": "1:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Rahul Das",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "serving",
+            "createdAt": "2026-10-09T09:00:00.000Z"
+          },
+          {
+            "token": "A110",
+            "sequence": 10,
+            "date": "2026-10-09",
+            "slot": {
+              "open": "1:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Priya Roy",
+              "type": "elderly"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-09T09:05:00.000Z"
+          },
+          {
+            "token": "A111",
+            "sequence": 11,
+            "date": "2026-10-09",
+            "slot": {
+              "open": "1:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Ayan Das",
+              "type": "child"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-09T09:10:00.000Z"
+          },
+          {
+            "token": "A112",
+            "sequence": 12,
+            "date": "2026-10-09",
+            "slot": {
+              "open": "1:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Suman Roy",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-09T09:15:00.000Z"
+          },
+          {
+            "token": "A113",
+            "sequence": 13,
+            "date": "2026-10-09",
+            "slot": {
+              "open": "1:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Emergency Patient",
+              "type": "emergency"
+            },
+            "priority": "emergency",
+            "status": "waiting",
+            "createdAt": "2026-10-09T09:20:00.000Z"
+          },
+          {
+            "token": "QE-EBFS498G",
+            "paymentId": "pay_Tlpgq4EBFs498G",
+            "paymentOrderId": "order_TlpgVFrPudzSxN",
+            "clinicId": "clinic-101",
+            "doctorId": "doctor-101",
+            "patient": {
+              "name": "samir",
+              "age": 21,
+              "gender": "Male"
+            },
+            "date": "2026-10-15",
+            "time": "4:00 PM",
+            "slot": {
+              "open": "4:00 PM",
+              "close": "9:00 PM"
+            },
+            "status": "waiting",
+            "paymentStatus": "paid",
+            "bookingCharge": 20,
+            "currency": "INR",
+            "createdAt": "2026-10-09T13:53:15.490Z"
+          },
+          {
+            "token": "QE-A3YQOGE7",
+            "paymentId": "pay_TlpqYga3yqOGe7",
+            "paymentOrderId": "order_Tlpq6Uavwr4MhX",
+            "clinicId": "clinic-101",
+            "doctorId": "doctor-101",
+            "patient": {
+              "name": "Rahul",
+              "age": 21,
+              "gender": "Male"
+            },
+            "date": "2026-10-12",
+            "time": "5:00 PM",
+            "slot": {
+              "open": "5:00 PM",
+              "close": "8:00 PM"
+            },
+            "status": "waiting",
+            "paymentStatus": "paid",
+            "bookingCharge": 20,
+            "currency": "INR",
+            "createdAt": "2026-10-09T14:01:40.552Z"
+          }
+        ]
+      },
+      {
+        "id": "doctor-102",
+        "name": "Dr. Priyanka Roy",
+        "specialization": "Dermatology",
+        "experience": 8,
+        "duration": 20,
+        "fee": 500,
+        "bookingCharge": 20,
+        "schedule": {
+          "monday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "4:00 PM",
+                "close": "7:00 PM",
+                "capacity": 9,
+                "checkupStartTime": "4:10 PM"
+              }
+            ]
+          },
+          "tuesday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "10:00 AM",
+                "close": "1:00 PM",
+                "capacity": 9,
+                "checkupStartTime": "10:10 AM"
+              },
+              {
+                "open": "5:00 PM",
+                "close": "8:00 PM",
+                "capacity": 9,
+                "checkupStartTime": "5:10 PM"
+              }
+            ]
+          },
+          "wednesday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "4:00 PM",
+                "close": "8:00 PM",
+                "capacity": 12,
+                "checkupStartTime": "4:10 PM"
+              }
+            ]
+          },
+          "thursday": {
+            "active": false,
+            "slots": []
+          },
+          "friday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "10:00 AM",
+                "close": "1:00 PM",
+                "capacity": 9,
+                "checkupStartTime": "10:10 AM"
+              },
+              {
+                "open": "5:00 PM",
+                "close": "10:00 PM",
+                "capacity": 9,
+                "checkupStartTime": "8:10 PM"
+              }
+            ]
+          },
+          "saturday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "2:00 PM",
+                "close": "6:00 PM",
+                "capacity": 12,
+                "checkupStartTime": "2:10 PM"
+              }
+            ]
+          },
+          "sunday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "10:00 AM",
+                "close": "1:00 PM",
+                "capacity": 9,
+                "checkupStartTime": "10:10 AM"
+              }
+            ]
+          }
+        },
+        "bookings": [
+          {
+            "token": "B101",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "4:00 PM",
+              "close": "7:00 PM"
+            },
+            "patient": {
+              "name": "Sneha Roy",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T12:00:00.000Z"
+          },
+          {
+            "token": "B102",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "4:00 PM",
+              "close": "7:00 PM"
+            },
+            "patient": {
+              "name": "Ayan Roy",
+              "type": "child"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T12:05:00.000Z"
+          },
+          {
+            "token": "B103",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "4:00 PM",
+              "close": "7:00 PM"
+            },
+            "patient": {
+              "name": "Sourav Ghosh",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T12:10:00.000Z"
+          },
+          {
+            "token": "B104",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "10:00 AM",
+              "close": "1:00 PM"
+            },
+            "patient": {
+              "name": "Puja Roy",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T12:00:00.000Z"
+          },
+          {
+            "token": "B105",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "5:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Ayan Sen",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T12:05:00.000Z"
+          },
+          {
+            "token": "B106",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "5:00 PM",
+              "close": "8:00 PM"
+            },
+            "patient": {
+              "name": "Moumita Das",
+              "type": "child"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T12:10:00.000Z"
+          },
+          {
+            "token": "A001",
+            "sequence": 1,
+            "bookingReference": "103daaf1-c1a4-4f27-a14e-0cccb94cb6cb",
+            "razorpayOrderId": "order_TlqJb4yg8EsY4s",
+            "paymentId": "pay_TlqJjcr0pZwI9i",
+            "date": "2026-10-09",
+            "slot": {
+              "open": "5:00 PM",
+              "close": "10:00 PM"
+            },
+            "patient": {
+              "name": "Samir Uraon",
+              "type": "self",
+              "age": 21,
+              "gender": "Male"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "paymentStatus": "paid",
+            "createdAt": "2026-10-09T14:29:18.926Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "6ac8ceb897d18c88c55fc48e",
+    "id": "clinic-102",
+    "name": "Green Valley Medical Centre",
+    "rating": "4.6",
+    "address": "New Town, Kolkata",
+    "lat": 22.5958,
+    "lng": 88.4797,
+    "doctors": [
+      {
+        "id": "doctor-103",
+        "name": "Dr. Sayan Mukherjee",
+        "specialization": "Orthopedics",
+        "experience": 14,
+        "duration": 40,
+        "fee": 700,
+        "bookingCharge": 20,
+        "schedule": {
+          "monday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "8:30 AM",
+                "close": "12:30 PM",
+                "capacity": 6,
+                "checkupStartTime": "8:45 AM"
+              },
+              {
+                "open": "4:00 PM",
+                "close": "7:00 PM",
+                "capacity": 4,
+                "checkupStartTime": "4:15 PM"
+              }
+            ]
+          },
+          "tuesday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "8:30 AM",
+                "close": "12:30 PM",
+                "capacity": 6,
+                "checkupStartTime": "8:45 AM"
+              }
+            ]
+          },
+          "wednesday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "4:00 PM",
+                "close": "8:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "4:15 PM"
+              }
+            ]
+          },
+          "thursday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "9:00 AM",
+                "close": "1:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "9:15 AM"
+              },
+              {
+                "open": "5:00 PM",
+                "close": "8:00 PM",
+                "capacity": 4,
+                "checkupStartTime": "5:15 PM"
+              }
+            ]
+          },
+          "friday": {
+            "active": false,
+            "slots": []
+          },
+          "saturday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "9:00 AM",
+                "close": "1:00 PM",
+                "capacity": 6,
+                "checkupStartTime": "9:15 AM"
+              }
+            ]
+          },
+          "sunday": {
+            "active": false,
+            "slots": []
+          }
+        },
+        "bookings": [
+          {
+            "token": "C101",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "8:30 AM",
+              "close": "12:30 PM"
+            },
+            "patient": {
+              "name": "Amit Ghosh",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "completed",
+            "createdAt": "2026-10-04T07:00:00.000Z"
+          },
+          {
+            "token": "C102",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "8:30 AM",
+              "close": "12:30 PM"
+            },
+            "patient": {
+              "name": "Rakesh Roy",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "serving",
+            "createdAt": "2026-10-04T07:05:00.000Z"
+          },
+          {
+            "token": "C103",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "8:30 AM",
+              "close": "12:30 PM"
+            },
+            "patient": {
+              "name": "Mohan Das",
+              "type": "elderly"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T07:10:00.000Z"
+          },
+          {
+            "token": "C104",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "8:30 AM",
+              "close": "12:30 PM"
+            },
+            "patient": {
+              "name": "Raj Das",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T07:00:00.000Z"
+          },
+          {
+            "token": "C105",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "8:30 AM",
+              "close": "12:30 PM"
+            },
+            "patient": {
+              "name": "Sourav Das",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T07:05:00.000Z"
+          }
+        ]
+      },
+      {
+        "id": "doctor-104",
+        "name": "Dr. Ishita Banerjee",
+        "specialization": "Gynecology",
+        "experience": 9,
+        "duration": 25,
+        "fee": 700,
+        "bookingCharge": 20,
+        "schedule": {
+          "monday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "3:00 PM",
+                "close": "6:00 PM",
+                "capacity": 7,
+                "checkupStartTime": "3:10 PM"
+              }
+            ]
+          },
+          "tuesday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "3:00 PM",
+                "close": "6:00 PM",
+                "capacity": 7,
+                "checkupStartTime": "3:10 PM"
+              }
+            ]
+          },
+          "wednesday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "10:00 AM",
+                "close": "1:00 PM",
+                "capacity": 7,
+                "checkupStartTime": "10:10 AM"
+              },
+              {
+                "open": "4:00 PM",
+                "close": "7:00 PM",
+                "capacity": 7,
+                "checkupStartTime": "4:10 PM"
+              }
+            ]
+          },
+          "thursday": {
+            "active": false,
+            "slots": []
+          },
+          "friday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "3:00 PM",
+                "close": "8:00 PM",
+                "capacity": 12,
+                "checkupStartTime": "3:10 PM"
+              }
+            ]
+          },
+          "saturday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "10:00 AM",
+                "close": "2:00 PM",
+                "capacity": 9,
+                "checkupStartTime": "10:10 AM"
+              }
+            ]
+          },
+          "sunday": {
+            "active": true,
+            "slots": [
+              {
+                "open": "11:00 AM",
+                "close": "2:00 PM",
+                "capacity": 7,
+                "checkupStartTime": "11:10 AM"
+              }
+            ]
+          }
+        },
+        "bookings": [
+          {
+            "token": "D101",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "3:00 PM",
+              "close": "6:00 PM"
+            },
+            "patient": {
+              "name": "Puja Sen",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T10:00:00.000Z"
+          },
+          {
+            "token": "D102",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "3:00 PM",
+              "close": "6:00 PM"
+            },
+            "patient": {
+              "name": "Riya Sen",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T10:05:00.000Z"
+          },
+          {
+            "token": "D103",
+            "date": "2026-10-05",
+            "slot": {
+              "open": "3:00 PM",
+              "close": "6:00 PM"
+            },
+            "patient": {
+              "name": "Ananya Sen",
+              "type": "child"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-04T10:10:00.000Z"
+          },
+          {
+            "token": "D104",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "3:00 PM",
+              "close": "6:00 PM"
+            },
+            "patient": {
+              "name": "Riya Das",
+              "type": "self"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T10:00:00.000Z"
+          },
+          {
+            "token": "D105",
+            "date": "2026-10-06",
+            "slot": {
+              "open": "3:00 PM",
+              "close": "6:00 PM"
+            },
+            "patient": {
+              "name": "Ananya Roy",
+              "type": "child"
+            },
+            "priority": "normal",
+            "status": "waiting",
+            "createdAt": "2026-10-05T10:05:00.000Z"
+          }
+        ]
+      }
+    ]
+  }
+]
